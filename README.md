@@ -23,7 +23,7 @@
    ```
    **Uwaga!**
    Komenda przedstawiona powyżej automatycznie stworzy w infrastrukturze dwa VLAN-y: publiczny i prywatny, jakie wykorzystane są do komunikacji z klastrem. 
-   W przypadku potrzeby stworzenia drugiego klastra K8s lub w przypadku, gdy pierwszy został usuniety i jest potrzeba utworzenia go ponownie, 
+   W przypadku potrzeby stworzenia drugiego klastra K8s lub w przypadku, gdy pierwszy został usunięty i jest potrzeba utworzenia go ponownie, 
    wymagane jest, aby w komendzie `ibmcloud ks cluster create` podać identyfikatory VLAN-u publicznego i prywatnego, odpowiednio po parametrach: 
    `--private-vlan` oraz `--public-vlan`. Identyfikatory VLAN-ów odczytujemy wydając komendę `ibmcloud ks vlan ls --zone fra02`.
    
@@ -37,7 +37,7 @@
    ibmcloud ks cluster config -c myOwnCLusterName
    ```
 
-3. Konfiguracja repozytoium obrazów *Container Registry* i skopiownie przykładowego obrazu z *Docker Hub*
+3. Konfiguracja repozytoium obrazów *Container Registry* i skopiowanie przykładowego obrazu z *Docker Hub*
 
    1. Sprawdzenie konfiguracji tzw. *Secrets* w konfiguracji klastra.
    ```
